@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>requester_information</internal_name>
+        <layout>2down</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-07 13:01:35</sys_created_on>
+        <sys_id>46f1353b83b507943b04c296feaad3df</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Requester Information</sys_name>
+        <sys_package display_value="Automated Network Request Management" source="x_2044405_automa_0">71f0b20f83b1cf543b04c296feaad376</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Network Request Management">71f0b20f83b1cf543b04c296feaad376</sys_scope>
+        <sys_update_name>item_option_new_set_46f1353b83b507943b04c296feaad3df</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-07 13:09:10</sys_updated_on>
+        <title>Requester Information</title>
+        <type>one_to_one</type>
+        <version>5</version>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

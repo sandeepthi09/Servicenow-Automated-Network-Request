@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2044405_automa_0.GetUserDetails</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetUserDetails</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetUserDetails = Class.create();
+GetUserDetails.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getDetails: function() {
+
+        var userId = this.getParameter('sysparm_user');
+
+        if (!userId)
+            return "";
+
+        var gr = new GlideRecord('sys_user');
+
+        if (gr.get(userId)) {
+
+            var data = {
+                email: gr.getValue('email'),
+                name: gr.getValue('name'),
+                phone: gr.getValue('mobile_phone')
+            };
+
+            return JSON.stringify(data);
+        }
+
+        return "";
+    },
+
+    type: 'GetUserDetails'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-07 14:21:54</sys_created_on>
+        <sys_id>b7a106f7833907943b04c296feaad3ef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GetUserDetails</sys_name>
+        <sys_package display_value="Automated Network Request Management" source="x_2044405_automa_0">71f0b20f83b1cf543b04c296feaad376</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Automated Network Request Management">71f0b20f83b1cf543b04c296feaad376</sys_scope>
+        <sys_update_name>sys_script_include_b7a106f7833907943b04c296feaad3ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-07 14:55:56</sys_updated_on>
+    </sys_script_include>
+</record_update>

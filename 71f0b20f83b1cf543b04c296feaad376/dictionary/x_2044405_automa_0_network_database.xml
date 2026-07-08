@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="48e00b4b8335cf543b04c296feaad3bc" label="Network Database" max_length="40" name="x_2044405_automa_0_network_database" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Customer Document." max_length="100" name="customer_document" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Additional Information" max_length="100" name="additional_information" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer Address" max_length="100" name="customer_address" type="string"/>
+        <element attributes="encode_utf8=false" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Relocation Reason" max_length="100" name="relocation_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Type" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Relocation" sequence="1" value="relocation"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Date of Enquiry" max_length="40" name="date_of_enquiry" type="glide_date"/>
+        <element attributes="encode_utf8=false" label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="pending" label="Work Status" max_length="40" name="u_work_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="4" value="rejected"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="approved"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Device Type" max_length="40" name="u_device_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Laptop" sequence="0" value="laptop"/>
+                <element inactive_on_update="false" label="Others" sequence="2" value="others"/>
+                <element inactive_on_update="false" label="Mobile" sequence="1" value="mobile"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Phone Number" max_length="40" name="phone_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Details" max_length="40" name="device_details" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Relocation Address" max_length="100" name="relocation_address" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Request Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="requested_for"/>
+        </index>
+    </element>
+</database>

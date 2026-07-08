@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Network Request">53fdd173833507943b04c296feaad36e</catalog_item>
+        <catalog_variable>IO:af9169b783f107943b04c296feaad32f</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>200</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-07 13:55:51</sys_created_on>
+        <sys_id>f23f31b3833907943b04c296feaad31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>if_this_is_a_relocation_please_provide_your_relocation_reason</sys_name>
+        <sys_package display_value="Automated Network Request Management" source="x_2044405_automa_0">71f0b20f83b1cf543b04c296feaad376</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Network Request Management">71f0b20f83b1cf543b04c296feaad376</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_f23f31b3833907943b04c296feaad31f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-07 13:55:51</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show Relocation Fields">5c6e35ff83f507943b04c296feaad36e</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>if_this_is_a_relocation_please_provide_your_relocation_reason</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=f23f31b3833907943b04c296feaad31f"/>
+</record_update>
